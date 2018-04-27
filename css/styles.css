@@ -1,0 +1,108 @@
+.header1 {
+  background-image: url(../img/backgrounds/landing.jpg);
+  margin-top: 10px;
+  height: 450px;
+}
+#foo {
+  display: block;
+  margin:auto;
+  padding: 2px;
+}
+#foo1 {
+  text-align: center;
+  font-size: 25px;
+  padding-top: 0px;
+  margin-top: 0px;
+  color: #f4faf7;
+}
+.wrap {
+  width: 50%;
+  color: #f4faf7;
+  padding: 15px;
+}
+.icon {
+  width: 40px;
+  margin: 6px 0px;
+  background-color: #f4faf7;
+  height: 6px;
+}
+.container-fluid .row {
+  height: 250px;
+  padding: 0px;
+}
+#one {
+  background-color: #cad9d1;
+  height: 125px;
+  text-align: center;
+  font-size: 25px;
+  padding: 40px 20px 40px 20px;
+}
+#two {
+  background-color: #F15A29;
+  height: 125px;
+  text-align: center;
+  font-size: 25px;
+  padding: 40px 20px 40px 20px;
+  color: #faf7f7;
+}
+#foo2 {
+  background-image: url(../img/foodtop/breakfast.jpg);
+  text-align: center;
+  font-size: 25px;
+  padding: 125px 20px 125px 20px;
+  color: #faf7f7;
+}
+.padding-1 {
+  padding-right: 0;
+}
+#foo3 {
+  background-image: url(../img/foodtop/lunch.jpg);
+  text-align: center;
+  font-size: 25px;
+  padding: 125px 20px 125px 20px;
+  color: #faf7f7;
+}
+#foo4 {
+  background-image: url(../img/foodtop/dinner.jpg);
+  text-align: center;
+  font-size: 25px;
+  padding: 125px 20px 125px 20px;
+  color: #faf7f7;
+}
+.row1 {
+  margin: 60px;
+}
+.col1 {
+  border: 3px solid #ddd;
+  padding: 5px;
+  box-shadow: 8px #150602;
+}
+.col2 {
+  padding: 20px;
+}
+#fast {
+  font-size: 35px;
+}
+#fast1 {
+  font-size: 20px;
+}
+#button {
+  border-color: #F15A29;
+  background-color: white;
+  border-radius: 3px;
+}
+#drink {
+  font-size: 35px;
+}
+#drink2 {
+  font-size: 20px;
+}
+.column5 {
+  float: left;
+  width: 50%;
+}
+.row2::after {
+  content: "";
+  clear: both;
+  display: table;
+}
