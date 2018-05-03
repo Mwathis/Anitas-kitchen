@@ -3,18 +3,27 @@
 <head>
   <title>Anita's Kitchen</title>
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-  <script src="js/jquery-3.3.1.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="js/scripts.js"></script>
   <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/scripts.js"></script>
 </head>
 <body>
   <div id="box" class="container-fluid">
-    <header class="header1">
-      <div class="wrap">
-        <div class="icon"></div>
-        <div class="icon"></div>
-        <div class="icon"></div>
+    <header class="header">
+      <div class="dropdown">
+        <button id="dropbtn">
+          <div class="wrap">
+            <div class="icon"></div>
+            <div class="icon"></div>
+            <div class="icon"></div>
+          </div>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Menu</a>
+          <a href="#">Events</a>
+          <a href="#">Contacts</a>
+        </div>
       </div>
       <img id="foo" src="img/logoBig.png" alt="Logo Image">
       <p id="foo1">We Provide The Best Food <br /> At The <strong>Best Price </strong></p>
@@ -74,6 +83,7 @@
     </div>
   </div>
   <div id="box1" class="container-fluid">
+    <div id="cony" class="container">
     <div class="container">
       <ul class="nav nav-tabs bar" role="tablist">
         <li class="nav-item active">
@@ -91,8 +101,7 @@
       </ul>
     </div>
     <div class="tab-content">
-      <div id="Fast Food" class="container tab-pane active">
-        <i class="material-icons" style="font-size:36px;color:#F15A29"></i>
+      <div id="Fast Food" class="tab-pane active">
         <div class="container">
           <div class="row4">
             <div class="col-sm-4 foo5">
@@ -118,12 +127,31 @@
       </div>
     </div>
   </div>
-  <div id="box2" class="container">
+  </div>
+  <div id="box2" class="container-fluid">
     <div class="row">
       <div class="col-sm-8">
-        <header>
-          <h1 id="happy">Our Happy Customers</h1>
-        </header>
+        <h1 id="happy">Our Happy Customers</h1>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+                <div class="carousel-inner">
+                  <div class="item active">
+                        <small><strong>Susan lao</strong></small>
+                        <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&rdquo;</p>
+                        <img src="img/customers/p1.png">
+                  </div>
+                  <div class="item">
+                        <small><strong>George Richard</strong></small>
+                        <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&rdquo;</p>
+                        <img src="img/customers/p2.png">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="col-sm-4">
         <header>
@@ -135,11 +163,19 @@
   </div>
   <div id="box3" class="container-fluid">
     <div class="container formy">
-      <p id="items">Get our daily food items delivered to your email</p>
-      <form id="formy1" class="form-inline" action="/action_page.php">
-        <input type="email" class="form-control" id="email" placeholder="Your email" name="email">
-        <button type="submit" class="btn btn-primary">Subscribe</button>
-      </form>
+      <div class="row">
+        <div class="col-sm-12"><p id="items">Get our daily food items delivered to your email</p></div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+          <form id="formy1" class="form-inline" action="/action_page.php">
+            <input type="email" class="form-control" id="email" placeholder="Your email" name="email">
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+        <div class="col-sm-4"></div>
+      </div>
     </div>
   </div>
   <div id="box4" class="container-fluid">
