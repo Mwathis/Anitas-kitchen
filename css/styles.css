@@ -166,9 +166,10 @@
   margin-top: 40px;
 }
 #happy {
-  text-align: center;
-  font-size: 25px;
+  font-size: 20px;
   color: #F15A29;
+  text-align: center;
+  padding-top: 40px;
 }
 #box3 {
   background-image: url(../img/backgrounds/subscribe.jpg);
@@ -184,7 +185,6 @@
 .formy {
   display: block;
   text-align: center;
-  grid-row-gap: 0;
 }
 #formy1 {
   display: inline-block;
@@ -226,4 +226,37 @@
   padding: 0 10px 30px 10px;
   margin-top: 30px;
   text-align:center;
+}
+#fan {
+  padding: 0 10px 0px 10px;
+  font-size: 30px;
+  color: #F15A29;
+}
+#fany {
+  display: flex;
+  margin: 115px 20px 20px 55px;
+  border-color: #efeff5;
+  border-style: solid;
+  border-width: 3px;
+}
+#amaze {
+  padding: 0px 0 0 0;
+}
+#happy1 {
+  font-size: 20px;
+  padding-top: 10px;
+  color: #F15A29;
+}
+#geo {
+  font-size: 18px;
+}
+#od {
+  color: #F15A29;
+}
+#od1 {
+  color: black;
+  background-color: #d9d9ed;
+}
+#desc {
+  color: #F15A29;
 }
