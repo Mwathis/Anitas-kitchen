@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Anita's Kitchen</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/jquery-3.3.1.js"></script>
@@ -31,7 +32,7 @@
   </div>
   <div class="container-fluid">
     <div class="row row3">
-      <div class="col-sm-3 padding-1">
+      <div class="col-sm-3 padding-1" id="boxy">
         <div id="one">Happy Hour</div>
         <div id="two">Party Time</div>
       </div>
@@ -87,16 +88,16 @@
     <div class="container">
       <ul class="nav nav-tabs bar" role="tablist">
         <li class="nav-item active">
-          <a class="nav-link" data-toggle="tab" href="#Fast Food">Fast Food</a>
+          <a class="nav-link" data-toggle="tab" href="#Fast Food" id="od">Fast Food</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" data-toggle="tab" href="#Drinks">Drinks</a>
+          <a class="nav-link" data-toggle="tab" href="#Drinks" id="od1">Drinks</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" data-toggle="tab" href="#Chicken">Chicken</a>
+          <a class="nav-link" data-toggle="tab" href="#Chicken" id="od1">Chicken</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" data-toggle="tab" href="#Rice">Rice</a>
+          <a class="nav-link" data-toggle="tab" href="#Rice" id="od1">Rice</a>
         </li>
       </ul>
     </div>
@@ -108,19 +109,19 @@
               <a href="img/fastfood/chickenBurger.jpg">
               <img src="img/fastfood/chickenBurger.jpg" alt="Chicken Burger">
               </a>
-              <div class="desc">Chicken Burger</div>
+              <div id="desc">Chicken Burger</div>
             </div>
             <div class="col-sm-4 foo5">
               <a href="img/fastfood/beefBurger.jpg">
                 <img src="img/fastfood/beefBurger.jpg" alt="Beef Burger">
               </a>
-              <div class="desc">Beef Burger</div>
+              <div id="desc">Beef Burger</div>
             </div>
             <div class="col-sm-4 foo5">
               <a href="img/fastfood/chickenPizza.jpg">
                 <img src="img/fastfood/chickenPizza.jpg" alt="Chicken Pizza">
               </a>
-              <div class="desc">Chicken Pizza</div>
+              <div id="desc">Chicken Pizza</div>
             </div>
           </div>
         </div>
@@ -129,52 +130,47 @@
   </div>
   </div>
   <div id="box2" class="container-fluid">
-    <div class="row">
-      <div class="col-sm-8">
-        <h1 id="happy">Our Happy Customers</h1>
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12">
-              <div class="carousel slide" data-ride="carousel" id="quote-carousel">
-                <div class="carousel-inner">
-                  <div class="item active">
-                        <small><strong>Susan lao</strong></small>
-                        <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&rdquo;</p>
-                        <img src="img/customers/p1.png">
-                  </div>
-                  <div class="item">
-                        <small><strong>George Richard</strong></small>
-                        <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&rdquo;</p>
-                        <img src="img/customers/p2.png">
+    <div id="fany" class="container">
+      <div class="row">
+        <div class="col-sm-8">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <h1 id="happy1">Our Happy Customers</h1>
+                      <small id="geo">George Richard</small>
+                      <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&rdquo;</p>
+                      <i id="fan" class="fa fa-angle-left"></i>
+                      <img src="img/customers/p1.png">
+                      <img src="img/customers/p2.png">
+                      <img src="img/customers/p3.png">
+                      <i id="fan" class="fa fa-angle-right"></i>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="col-sm-4">
-        <header>
+        <div class="col-sm-4">
           <h1 id="happy">About Menu</h1>
-          <p>We have an amazing menu of more than 100 dishes,drinks and more.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-        </header>
+          <p id="amaze">We have an amazing menu of more than 100 dishes,drinks and more.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis.nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
+        </div>
       </div>
     </div>
   </div>
   <div id="box3" class="container-fluid">
     <div class="container formy">
       <div class="row">
-        <div class="col-sm-12"><p id="items">Get our daily food items delivered to your email</p></div>
-      </div>
-      <div class="row">
-        <div class="col-sm-4"></div>
-        <div class="col-sm-4">
+        <div class="col-sm-12">
           <form id="formy1" class="form-inline" action="/action_page.php">
-            <input type="email" class="form-control" id="email" placeholder="Your email" name="email">
+            <p id="items">Get our daily food items delivered to your email</p>
+            <input type="email" class="form-control mr-2" id="email" placeholder="Your email" name="email">
             <button type="submit" class="btn btn-primary">Subscribe</button>
           </form>
         </div>
-        <div class="col-sm-4"></div>
       </div>
     </div>
   </div>
