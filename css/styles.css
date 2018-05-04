@@ -244,7 +244,7 @@
 }
 #happy1 {
   font-size: 20px;
-  padding-top: 10px;
+  padding-top: 0px;
   color: #F15A29;
 }
 #geo {
@@ -259,4 +259,9 @@
 }
 #desc {
   color: #F15A29;
+}
+.border-right {
+  border-right: 1px solid black;
+  height: 235px;
+  margin-top: 10px;
 }
