@@ -1,8 +1,7 @@
-/*
-$(document).ready(function() {
-  //carousel options
-  $('#quote-carousel').carousel({
-    pause: true, interval: 10000,
-  });
-});
-*/
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}

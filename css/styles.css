@@ -1,37 +1,53 @@
 #box {
   background-image: url(../img/backgrounds/landing.jpg);
-  margin-top: 10px;
-  height: 450px;
+  height: 550px;
 }
-#dropbtn {
-  background-image: url(../img/backgrounds/landing.jpg);
-  border-style: none;
-  cursor: pointer;
+.overlay {
+  height: 100%;
+  width: 0;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
 }
-.dropdown {
+.overlay-content {
   position: relative;
-  display: inline-block;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
 }
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
+.overlay a {
+  padding: 8px;
   text-decoration: none;
+  font-size: 36px;
+  color: #818181;
   display: block;
+  transition: 0.3s;
 }
-.dropdown-content a:hover {background-color: #f1f1f1}
-.dropdown:hover .dropdown-content {
-  display: block;
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
 }
-.dropdown:hover .dropbtn {
-  background-color: #3e8e41;
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+.spana {
+  font-size: 50px;
+  color: white;
 }
 #foo {
   display: block;
@@ -60,6 +76,11 @@
   height: 250px;
   padding: 0px;
 }
+.row3 .image:hover {
+  color:#000000;
+  filter: opacity(80%);
+  color: black;
+}
 #one {
   background-color: #cad9d1;
   height: 125px;
@@ -81,6 +102,10 @@
   font-size: 25px;
   padding: 125px 0px 125px 20px;
   color: #faf7f7;
+  cursor: pointer;
+}
+#foo2:hover {
+  color: black;
 }
 .padding-1 {
   padding-left:0;
@@ -92,6 +117,10 @@
   font-size: 25px;
   padding: 125px 0px 125px 20px;
   color: #faf7f7;
+  cursor: pointer;
+}
+#foo3:hover {
+  color: black;
 }
 #foo4 {
   background-image: url(../img/foodtop/dinner.jpg);
@@ -99,6 +128,10 @@
   font-size: 25px;
   padding: 125px 0px 125px 20px;
   color: #faf7f7;
+  cursor: pointer;
+}
+#foo4:hover {
+  color: black;
 }
 .row1 {
   margin: 60px;
@@ -117,10 +150,16 @@
 #fast1 {
   font-size: 20px;
 }
-#button {
+.btn-default{
+  color: #F15A29;
+  background-color: #fff;
   border-color: #F15A29;
-  background-color: white;
-  border-radius: 3px;
+  padding: 13px 30px 11px 25px;
+}
+.btn-default:hover{
+  background-color: #f98224;
+  color: #fff;
+  font-weight: 700;
 }
 #drink {
   font-size: 35px;
@@ -162,7 +201,7 @@
   clear: both;
 }
 #box2 {
-  height: 400px;
+  height: 300px;
   margin-top: 40px;
 }
 #happy {
@@ -171,28 +210,44 @@
   text-align: center;
   padding-top: 40px;
 }
-#box3 {
-  background-image: url(../img/backgrounds/subscribe.jpg);
-  margin-top: 30px;
-  height: 300px;
+.subscribe{
+  background: url('../img/backgrounds/subscribe.jpg') #333;
+  background-size: cover;
+  object-position: center;
+  height: 320px;
+  padding: 100px 40px 0px 40px;
 }
-#items {
-  color: white;
-  font-size: 30px;
-  text-align: center;
-  padding: 100px;
+.subscribe h2{
+  color: #fff;
 }
-.formy {
-  display: block;
-  text-align: center;
+.btn-subscribe{
+  background: #F15A29;
+  padding: 7px 51px!important;
+  color: #fff;
+  border-radius: 2px;
+  font-weight: 500;
 }
-#formy1 {
-  display: inline-block;
-  text-align: left;
+.form-subscribe {
+  height: 40px !important;
+  padding: 2px 50px 0px 12px !important;
+  background: rgba(144, 144, 144, 0.63) !important;
+  border: 1px solid rgba(98, 95, 95, 0.28) !important;
+  margin: 10px 15px 10px 400px;
+  color:#fff!important;
 }
-.btn {
-  background-color: #F15A29;
+.form-inline{
+  font-family:'PT Sans', sans-serif;
+  font-weight:500;
+}
+.btn-highlight:hover{
+  color: #F15A29;
+  background-color: #fff;
   border-color: #F15A29;
+}
+.form-control::placeholder{
+  color:#fff!important;
+  font-size:15px;
+  opacity:0.8;
 }
 #box4 {
   background-color: #F15A29;
@@ -234,7 +289,7 @@
 }
 #fany {
   display: flex;
-  margin: 115px 20px 20px 55px;
+  margin: 40px 20px 20px 55px;
   border-color: #efeff5;
   border-style: solid;
   border-width: 3px;
