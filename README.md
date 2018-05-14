@@ -13,7 +13,7 @@ git clone https://github.com/Mwathis/Anitas-kitchen.git
 ```
 
 ## Link to Live site
-You can find the site [here](https://Mwathis.github.io)
+You can find the site [here](https://mwathis.github.io/Anitas-kitchen/)
 
 ## Copyright and License
 MIT License
